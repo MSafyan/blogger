@@ -1,0 +1,45 @@
+.sidebar{
+    flex: 3;
+    margin: 50px 20px 20px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: vertical;
+}
+
+.sidebar-item{
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+}
+
+.sidebar-title{
+    margin: 10px;
+    padding: 5px;
+    border-top: 1px solid #e34234;
+    border-bottom: 1px solid #e34234; 
+    font-family: 'Sora', sans-serif;
+    color:#e34234;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sidebar-list li{
+    list-style-type: circle;
+    font-size: 16px;
+    font-weight: 600;
+    color:darkcyan;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sidebar-list li:hover{
+    color: crimson;
+    border-bottom: 1px solid gray;
+}
+
+.sidebar-desc{
+    font-family: 'Roboto', sans-serif;
+    color: #444;
+    font-size: 16px;
+    padding: 20px;
+}
+

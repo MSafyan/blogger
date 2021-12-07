@@ -1,0 +1,68 @@
+.register{
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(rgba(255,255,255,0.3), 
+    rgba(255,255,255,0.3)), 
+    url("http://localhost:5050/images/registerbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    align-items: center;
+    font-family: 'roboto', sans-serif;
+}
+
+.register-title{
+    font-size: 120px;
+    font-family: 'Tangerine', cursive;
+    color: #e34234;
+}
+
+.register-subtitle{
+    font-size: 25px;
+    color: #1a1110;
+    font-weight: 500px;
+}
+
+.register-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.register-form > label{
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color:  #1a1110;
+}
+
+.register-form > input{
+    padding: 10px;
+    background-color: white;
+    border: none;
+
+}
+
+.register-button{
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #e34234;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.register-login-button{
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color:#e34234;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 10px; 
+}

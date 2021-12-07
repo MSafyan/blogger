@@ -1,0 +1,31 @@
+{
+  "name": "blog-site-api",
+  "version": "1.0.0",
+  "engines": {
+    "node": "16.x"
+  },
+  "description": "Blog site created as a webdev project",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"node index.js\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongodb": "^4.1.1",
+    "mongoose": "^6.0.1",
+    "multer": "^1.4.3",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "morgan": "^1.9.1",
+    "nodemon": "^1.17.5"
+  }
+}
