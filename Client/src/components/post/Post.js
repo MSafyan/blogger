@@ -1,6 +1,5 @@
 import './post.css';
 import {Link} from 'react-router-dom'
-const path = require('path');
 
 export default function Post({post}) {
     const PF = 'http://localhost:5050/images/';

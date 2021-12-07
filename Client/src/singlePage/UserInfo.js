@@ -39,12 +39,12 @@ export default function UserInfo() {
             updatedUser.profilePic = filename;
 
             try{
-                const res = await axios.post('/upload', data);
+                await axios.post('/upload', data);
             }catch(err){
                 console.log("error1: " + err);
             }
             try{
-                const res = await axios.post('/deleteOldImage', {oldImage});
+                await axios.post('/deleteOldImage', {oldImage});
             }catch(err){
                 console.log(err);
             }

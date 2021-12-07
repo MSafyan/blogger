@@ -1,6 +1,5 @@
 import Topbar from './components/topbar/Topbar.js';
 import Home from './components/home/Home.js';
-import Single from './singlePage/Single.js';
 import Write from './singlePage/Write.js';
 import UserInfo from './singlePage/UserInfo.js';
 import Login from './singlePage/Login.js';
@@ -12,9 +11,7 @@ import {Context} from './context/Context.js'
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
-} from "react-router-dom";
+  Route} from "react-router-dom";
 
 function App() {
   const {user} = useContext(Context);

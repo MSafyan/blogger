@@ -11,10 +11,13 @@ export default function Write() {
     const [categories, setCategories] = useState([]);
     const [catlist, setCatlist] = useState([]);
 
-    useEffect(async () => {
-        const cats = await axios.get('/categories');
-        const temparr = cats.data.map((c) => c.name);
-        setCategories(temparr);
+    useEffect(() => {
+        const data=async()=>{
+            const cats = await axios.get('/categories');
+            const temparr = cats.data.map((c) => c.name);
+            setCategories(temparr);
+        }
+        data();
     },[]);
 
     const handleAddCategory = (e) => {

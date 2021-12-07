@@ -10,9 +10,8 @@ export default function Login() {
 
     const userRef = useRef();
     const passwordRef = useRef();
-    const PF = 'http://localhost:5050/images/';
     
-    const {user, dispatch, isFetching} = useContext(Context);
+    const { dispatch, isFetching} = useContext(Context);
 
     const handleSubmit = async (e) => {
         e.preventDefault();

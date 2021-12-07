@@ -1,6 +1,6 @@
 import './topbar.css';
 import { Link } from 'react-router-dom';
-import { useState, useEffect, useContext } from 'react';
+import {  useContext } from 'react';
 import {Context} from '../../context/Context';
 
 export default function Topbar(){
