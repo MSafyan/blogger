@@ -57,14 +57,14 @@ app.use('/api/categories', categoryRoute);
 
 
 // serve static assets if we are in production
-// if (process.env.NODE_ENV === 'production'){
-//     // set static folder
-//     app.use(express.static('./Client/build'));
+if (process.env.NODE_ENV === 'production'){
+    // set static folder
+    app.use(express.static('./Client/build'));
 
-//     app.get('*', (req, res)=>{
-//         res.sendFile(path.join(__dirname,'./Client/build/index.html'));
-//     });
-// }
+    app.get('*', (req, res)=>{
+        res.sendFile(path.join(__dirname,'./Client/build/index.html'));
+    });
+}
 
 const port = process.env.port || 5050;
 
