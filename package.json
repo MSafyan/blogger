@@ -2,7 +2,8 @@
   "name": "blog-site-api",
   "version": "1.0.0",
   "engines": {
-    "node": "16.x"
+    "node": "16.1.0",
+    "npm": "7.18.1"
   },
   "description": "Blog site created as a webdev project",
   "main": "index.js",
@@ -11,8 +12,7 @@
     "start": "node index.js",
     "server": "nodemon index.js",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"node index.js\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix Client && npm run build --prefix Client"
+    "dev": "concurrently \"node index.js\" \"npm run client\""
   },
   "author": "",
   "license": "ISC",

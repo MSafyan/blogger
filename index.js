@@ -47,7 +47,6 @@ app.post("/api/deleteOldImage", async (req, res)=> {
     }catch(err){
         console.log(err);
     }
-    
 })
 
 app.use('/api/auth', authRoute); 
@@ -57,20 +56,22 @@ app.use('/api/categories', categoryRoute);
 
 
 // serve static assets if we are in production
-app.use(express.static(path.join(__dirname, './Client/build')));
+// app.use(express.static(path.join(__dirname, './Client/build')));
 
-if (process.env.NODE_ENV === 'production'){
-    // set static folder
-    // app.use(express.static('./Client/build'));
+// if (process.env.NODE_ENV === 'production'){
+//     // set static folder
+//     // app.use(express.static('./Client/build'));
 
-    app.get('*', (req, res)=>{
-        res.sendFile(path.join(__dirname,'./Client/build/index.html'));
-    });
-}
+//     app.get('*', (req, res)=>{
+//         res.sendFile(path.join(__dirname,'./Client/build/index.html'));
+//     });
+// }
 
 const port = process.env.port || 5050;
 
 app.listen(port, () => {
-    console.log("server is running on port 5050");
+    console.log(`server is running on port ${port}`);
 })
 
+// ,
+//     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix Client && npm run build --prefix Client"
