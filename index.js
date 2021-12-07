@@ -72,5 +72,3 @@ app.listen(port, () => {
     console.log("server is running on port 5050");
 })
 
-// ,
-    // "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix Client && npm run build --prefix Client"
